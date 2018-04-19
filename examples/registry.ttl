@@ -1,0 +1,22 @@
+@prefix dataid: <http://dataid.dbpedia.org/ns/core#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix nde: <http://schemas.netwerkdigitaalerfgoed.nl/registry#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pav: <http://purl.org/pav> .
+@prefix schema: <http://schema.org/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://registry.netwerkdigitaalerfgoed.nl> a dcat:Catalog ;
+    dcterms:title "Register van datasets met erfgoedinformatie"@nl ;
+    dcterms:description "Register van Linked Data-datasets van organisaties die bijdragen aan Netwerk Digitaal Erfgoed"@nl ;
+    dcterms:publisher <http://registry.netwerkdigitaalerfgoed.nl/organizations/1> ;
+    foaf:homepage <http://registry.netwerkdigitaalerfgoed.nl> ;
+    dcterms:issued "2018-01-01"^^xsd:date ;
+    dcterms:modified "2018-04-18"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:dataset <datasets/1>, <datasets/2>, <datasets/3>, <datasets/4>, <datasets/5>, <datasets/6>, <datasets/7>, <datasets/8> .

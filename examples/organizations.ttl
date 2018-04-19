@@ -1,0 +1,51 @@
+@prefix dataid: <http://dataid.dbpedia.org/ns/core#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix nde: <http://schemas.netwerkdigitaalerfgoed.nl/registry#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pav: <http://purl.org/pav> .
+@prefix schema: <http://schema.org/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/organizations/1> a foaf:Organization ;
+    dcterms:identifier <http://data.bibliotheken.nl/doc/thes/p075301482> ;
+    foaf:name "Koninklijke Bibliotheek"@nl ;
+    dcterms:description "De Koninklijke Bibliotheek is de nationale bibliotheek van Nederland"@nl ;
+    foaf:mbox <mailto:dataservices@kb.nl> ;
+    foaf:page <https://www.kb.nl/bronnen-zoekwijzers/dataservices-en-apis> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/organizations/2> a foaf:Organization ;
+    dcterms:identifier <http://dbpedia.org/page/DBpedia> ;
+    foaf:name "DBpedia" ;
+    dcterms:description "DBpedia is een vrijwilligersorganisatie die wil bijdragen aan een open informatie-infrastructuur"@nl ;
+    foaf:mbox <mailto:dbpedia@infai.org> ;
+    foaf:page <http://wiki.dbpedia.org/dbpedia-association> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/organizations/3> a foaf:Organization ;
+    dcterms:identifier <https://viaf.org/viaf/156001284> ;
+    foaf:name "RKD-Nederlands Instituut voor Kunstgeschiedenis"@nl ;
+    dcterms:description "Het RKD maakt kennis, onderzoek en informatie over de kunst van de Nederlanden in internationale context wereldwijd toegankelijk voor musea, wetenschap en publiek"@nl ;
+    foaf:mbox <mailto:info@rkd.nl> ;
+    foaf:page <https://rkd.nl/nl/collecties/collecties-in-het-kort> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/organizations/4> a foaf:Organization ;
+    foaf:name "Erfgoed Brabant"@nl ;
+    dcterms:description "Erfgoed Brabant is het provinciale kennis- en expertisecentrum voor erfgoed"@nl ;
+    foaf:mbox <mailto:info@erfgoedbrabant.nl> ;
+    foaf:page <https://www.erfgoedbrabant.nl/> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/organizations/5> a foaf:Organization ;
+    foaf:name "Stadsarchief Breda"@nl ;
+    dcterms:description "Stadsarchief Breda verzamelt en beheert de geschiedenis van de stad en zijn inwoners"@nl ;
+    foaf:mbox <mailto:info@stadsarchiefbreda.nl> ;
+    foaf:page <https://stadsarchief.breda.nl/> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/organizations/6> a foaf:Organization ;
+    foaf:name "Stichting AdamNet"@nl ;
+    dcterms:description "AdamNet is een netwerk van Amsterdamse bibliotheken. Doel is samenwerken in het beschikbaar stellen van informatie over collecties en activiteiten"@nl ;
+    foaf:mbox <mailto:info@adamnet.nl> ;
+    foaf:page <http://www.adamnet.nl/> .

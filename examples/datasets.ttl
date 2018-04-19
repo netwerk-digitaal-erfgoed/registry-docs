@@ -1,0 +1,140 @@
+@prefix dataid: <http://dataid.dbpedia.org/ns/core#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix nde: <http://schemas.netwerkdigitaalerfgoed.nl/registry#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pav: <http://purl.org/pav> .
+@prefix schema: <http://schema.org/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/datasets/1> a dcat:Dataset ;
+    dcterms:identifier <http://data.bibliotheken.nl/doc/dataset/nbt> ;
+    dcterms:title "Nederlandse Bibliografie Totaal"@nl ;
+    dcterms:description "Nederlandse Bibliografie Totaal (NBT) bevat publicaties die in Nederland, over Nederland of in de Nederlandse taal zijn verschenen"@nl ;
+    dcterms:creator <http://registry.netwerkdigitaalerfgoed.nl/organizations/1> ;
+    dcterms:publisher <http://registry.netwerkdigitaalerfgoed.nl/organizations/1> ;
+    dcat:landingPage <http://data.bibliotheken.nl/doc/dataset/nbt> ;
+    dcterms:issued "2018-02-03"^^xsd:date ;
+    dcterms:modified "2018-03-11"^^xsd:date ;
+    dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+    nde:licenseOfContent <http://opendatacommons.org/licenses/by/1.0/> ;
+    nde:contentType <http://schemas.netwerkdigitaalerfgoed.nl/registry/contentTypes/objects> ;
+    owl:versionInfo "1.0" ;
+    pav:version "1.0" ;
+    pav:hasCurrentVersion <http://registry.netwerkdigitaalerfgoed.nl/datasets/2> ;
+    dataid:latestVersion <http://registry.netwerkdigitaalerfgoed.nl/datasets/2> ;
+    dataid:nextVersion <http://registry.netwerkdigitaalerfgoed.nl/datasets/2> ;
+    dcat:distribution <distribution/1>, <distribution/2> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/datasets/2> a dcat:Dataset ;
+    dcterms:identifier <http://data.bibliotheken.nl/doc/dataset/nbt> ;
+    dcterms:title "Nederlandse Bibliografie Totaal"@nl ;
+    dcterms:description "Nederlandse Bibliografie Totaal (NBT) bevat publicaties die in Nederland, over Nederland of in de Nederlandse taal zijn verschenen"@nl ;
+    dcterms:creator <http://registry.netwerkdigitaalerfgoed.nl/organizations/1> ;
+    dcterms:publisher <http://registry.netwerkdigitaalerfgoed.nl/organizations/1> ;
+    dcat:landingPage <http://data.bibliotheken.nl/doc/dataset/nbt> ;
+    dcterms:issued "2018-04-17"^^xsd:date ;
+    dcterms:modified "2018-04-18"^^xsd:date ;
+    dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+    nde:licenseOfContent <http://opendatacommons.org/licenses/by/1.0/> ;
+    nde:contentType <http://schemas.netwerkdigitaalerfgoed.nl/registry/contentTypes/objects> ;
+    owl:versionInfo "2.0" ;
+    pav:version "2.0" ;
+    dcterms:isVersionOf <http://registry.netwerkdigitaalerfgoed.nl/datasets/1> ;
+    pav:previousVersion <http://registry.netwerkdigitaalerfgoed.nl/datasets/1> ;
+    dataid:previousVersion <http://registry.netwerkdigitaalerfgoed.nl/datasets/1> ;
+    dcat:distribution <distribution/3> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/datasets/3> a dcat:Dataset ;
+    dcterms:title "DBpedia april 2016"@nl ;
+    dcterms:description "Versie van april 2016"@nl ;
+    dcterms:creator <http://registry.netwerkdigitaalerfgoed.nl/organizations/2> ;
+    dcterms:publisher <http://registry.netwerkdigitaalerfgoed.nl/organizations/2> ;
+    dcat:landingPage <http://wiki.dbpedia.org/dbpedia-version-2016-04> ;
+    dcterms:issued "2018-04-17"^^xsd:date ;
+    dcterms:modified "2018-04-18"^^xsd:date ;
+    dcterms:license <http://purl.oclc.org/NET/rdflicense/cc-by-sa3.0> ;
+    nde:contentType <http://schemas.netwerkdigitaalerfgoed.nl/registry/contentTypes/terms> ;
+    owl:versionInfo "2016-04" ;
+    pav:version "2016-04" ;
+    pav:hasCurrentVersion <http://registry.netwerkdigitaalerfgoed.nl/datasets/4> ;
+    dataid:latestVersion <http://registry.netwerkdigitaalerfgoed.nl/datasets/4> ;
+    dataid:nextVersion <http://registry.netwerkdigitaalerfgoed.nl/datasets/4> ;
+    schema:startDate "2016-04-01"^^xsd:date ;
+    schema:endDate "2016-09-30"^^xsd:date ;
+    dcat:distribution <distribution/4>, <distribution/5> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/datasets/4> a dcat:Dataset ;
+    dcterms:title "DBpedia oktober 2016"@nl ;
+    dcterms:description "Versie van oktober 2016"@nl ;
+    dcterms:creator <http://registry.netwerkdigitaalerfgoed.nl/organizations/2> ;
+    dcterms:publisher <http://registry.netwerkdigitaalerfgoed.nl/organizations/2> ;
+    dcat:landingPage <http://wiki.dbpedia.org/develop/datasets/downloads-2016-10> ;
+    dcterms:issued "2018-04-17"^^xsd:date ;
+    dcterms:modified "2018-04-18"^^xsd:date ;
+    dcterms:license <http://purl.oclc.org/NET/rdflicense/cc-by-sa3.0> ;
+    nde:contentType <http://schemas.netwerkdigitaalerfgoed.nl/registry/contentTypes/terms> ;
+    owl:versionInfo "2016-10" ;
+    pav:version "2016-10" ;
+    dcterms:isVersionOf <http://registry.netwerkdigitaalerfgoed.nl/datasets/3> ;
+    pav:previousVersion <http://registry.netwerkdigitaalerfgoed.nl/datasets/3> ;
+    dataid:previousVersion <http://registry.netwerkdigitaalerfgoed.nl/datasets/3> ;
+    schema:startDate "2016-10-01"^^xsd:date ;
+    dcat:distribution <distribution/6>, <distribution/7> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/datasets/5> a dcat:Dataset ;
+    dcterms:title "RKDartists"@nl ;
+    dcterms:description "RKDartists bevat betrouwbare biografische gegevens over Nederlandse kunstenaars vanaf de middeleeuwen tot heden"@nl ;
+    dcterms:creator <http://registry.netwerkdigitaalerfgoed.nl/organizations/3> ;
+    dcterms:publisher <http://registry.netwerkdigitaalerfgoed.nl/organizations/3> ;
+    dcat:landingPage <https://rkd.nl/nl/projecten-en-publicaties/overige-databases/open-search-rkdartists> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/nl>, <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:issued "2018-02-17"^^xsd:date ;
+    dcterms:modified "2018-03-18"^^xsd:date ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1.0/> ;
+    nde:contentType <http://schemas.netwerkdigitaalerfgoed.nl/registry/contentTypes/terms> ;
+    dcat:distribution <distribution/8> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/datasets/6> a dcat:Dataset ;
+    dcterms:title "SKOS-versie van RKDartists"@nl ;
+    dcterms:description "Deze dataset bevat de SKOS-versie van RKDartists"@nl ;
+    dcterms:creator <http://registry.netwerkdigitaalerfgoed.nl/organizations/3> ;
+    dcterms:publisher <http://registry.netwerkdigitaalerfgoed.nl/organizations/3> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/nl>, <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:issued "2018-02-17"^^xsd:date ;
+    dcterms:modified "2018-03-18"^^xsd:date ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1.0/> ;
+    nde:contentType <http://schemas.netwerkdigitaalerfgoed.nl/registry/contentTypes/terms> ;
+    dcterms:source <http://registry.netwerkdigitaalerfgoed.nl/datasets/5> ;
+    dcat:distribution <distribution/9> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/datasets/7> a dcat:Dataset ;
+    dcterms:title "Foto- en filmcollectie van Stadsarchief Breda"@nl ;
+    dcterms:description "De foto- en filmcollectie bevat ruim 340.000 historische (bewegende) beelden"@nl ;
+    dcterms:creator <http://registry.netwerkdigitaalerfgoed.nl/organizations/5> ;
+    dcterms:publisher <http://registry.netwerkdigitaalerfgoed.nl/organizations/4> ;
+    dcat:landingPage <https://stadsarchief.breda.nl/collectie/beeld/films-en-foto-s/> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
+    dcterms:issued "2018-02-17"^^xsd:date ;
+    dcterms:modified "2018-03-18"^^xsd:date ;
+    dcterms:license <http://rightsstatements.org/page/InC/1.0/> ;
+    nde:licenseOfContent <http://rightsstatements.org/page/InC/1.0/> ;
+    nde:contentType <http://schemas.netwerkdigitaalerfgoed.nl/registry/contentTypes/objects> ;
+    dcat:distribution <distribution/10> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/datasets/8> a dcat:Dataset ;
+    dcterms:title "Adamlink straten"@nl ;
+    dcterms:description "De referentiedata voor Amsterdamse straten, gebouwen, wijken en personen worden samengesteld uit verschillende bronnen, waarop zo goed mogelijk redactie wordt gevoerd"@nl ;
+    dcterms:creator <http://registry.netwerkdigitaalerfgoed.nl/organizations/6> ;
+    dcterms:publisher <http://registry.netwerkdigitaalerfgoed.nl/organizations/6> ;
+    dcat:landingPage <https://adamlink.nl/data> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
+    dcterms:issued "2018-02-17"^^xsd:date ;
+    dcterms:modified "2018-03-18"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/3.0/> ;
+    nde:contentType <http://schemas.netwerkdigitaalerfgoed.nl/registry/contentTypes/terms> ;
+    dcat:distribution <distribution/11> .

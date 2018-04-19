@@ -1,0 +1,147 @@
+@prefix dataid: <http://dataid.dbpedia.org/ns/core#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix nde: <http://schemas.netwerkdigitaalerfgoed.nl/registry#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pav: <http://purl.org/pav> .
+@prefix schema: <http://schema.org/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/distributions/1> a dcat:Distribution ;
+    dcterms:title "SPARQL-endpoint versie 1"@nl ;
+    dcterms:description "SPARQL-endpoint van NBT"@nl ;
+    dcterms:issued "2018-02-03"^^xsd:date ;
+    dcterms:modified "2018-03-11"^^xsd:date ;
+    nde:serviceType <http://schemas.netwerkdigitaalerfgoed.nl/registry/serviceTypes/sparql> ;
+    dcat:accessURL <http://data.bibliotheken.nl/sparql> ;
+    void:sparqlEndpoint <http://data.bibliotheken.nl/sparql> ;
+    void:feature <https://www.w3.org/ns/formats/data/N-Triples>, <https://www.w3.org/ns/formats/data/RDF_XML> ;
+    dcat:mediaType "application/n-triples", "application/rdf+xml" ;
+    dataid:distributionOf <http://registry.netwerkdigitaalerfgoed.nl/datasets/1> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/distributions/2> a dcat:Distribution ;
+    dcterms:title "OAI-PMH-endpoint"@nl ;
+    dcterms:description "OAI-PMH-endpoint van NBT"@nl ;
+    dcterms:issued "2018-02-03"^^xsd:date ;
+    dcterms:modified "2018-03-11"^^xsd:date ;
+    nde:serviceType <http://schemas.netwerkdigitaalerfgoed.nl/registry/serviceTypes/oai-pmh> ;
+    dcat:accessURL <http://services.kb.nl/mdo/oai?verb=ListRecords&set=BOEKEN&metadataPrefix=dcx> ;
+    void:uriLookupEndpoint <http://services.kb.nl/mdo/oai?verb=ListRecords&set=BOEKEN&metadataPrefix=dcx> ;
+    void:feature <https://www.w3.org/ns/formats/data/RDF_XML> ;
+    dcat:mediaType "application/rdf+xml" ;
+    dataid:distributionOf <http://registry.netwerkdigitaalerfgoed.nl/datasets/1> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/distributions/3> a dcat:Distribution ;
+    dcterms:title "SPARQL-endpoint versie 2"@nl ;
+    dcterms:description "SPARQL-endpoint van NBT"@nl ;
+    dcterms:issued "2018-02-03"^^xsd:date ;
+    dcterms:modified "2018-03-11"^^xsd:date ;
+    nde:serviceType <http://schemas.netwerkdigitaalerfgoed.nl/registry/serviceTypes/sparql> ;
+    nde:serviceLevel <http://schemas.netwerkdigitaalerfgoed.nl/registry/serviceLevels/medium> ;
+    dcat:accessURL <http://data.bibliotheken.nl/sparql> ;
+    void:sparqlEndpoint <http://data.bibliotheken.nl/sparql> ;
+    void:feature <https://www.w3.org/ns/formats/data/N-Triples>, <https://www.w3.org/ns/formats/data/RDF_XML> ;
+    dcat:mediaType "application/n-triples", "application/rdf+xml" ;
+    dataid:distributionOf <http://registry.netwerkdigitaalerfgoed.nl/datasets/2> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/distributions/4> a dcat:Distribution ;
+    dcterms:title "Datadump"@nl ;
+    dcterms:description "Datadump van DBpedia"@nl ;
+    dcterms:issued "2018-02-03"^^xsd:date ;
+    dcterms:modified "2018-03-11"^^xsd:date ;
+    nde:serviceType <http://schemas.netwerkdigitaalerfgoed.nl/registry/serviceTypes/datadump> ;
+    dcat:downloadURL <http://downloads.dbpedia.org/2016-04/dbpedia_2016-04.nt> ;
+    void:dataDump <http://downloads.dbpedia.org/2016-04/dbpedia_2016-04.nt> ;
+    void:feature <https://www.w3.org/ns/formats/data/N-Triples> ;
+    dcat:mediaType "application/n-triples" ;
+    dataid:distributionOf <http://registry.netwerkdigitaalerfgoed.nl/datasets/3> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/distributions/5> a dcat:Distribution ;
+    dcterms:title "Linked Data Fragments-endpoint"@nl ;
+    dcterms:description "Linked Data Fragments-endpoint van DBpedia"@nl ;
+    dcterms:issued "2018-02-03"^^xsd:date ;
+    dcterms:modified "2018-03-11"^^xsd:date ;
+    nde:serviceType <http://schemas.netwerkdigitaalerfgoed.nl/registry/serviceTypes/ldf> ;
+    nde:serviceLevel <http://schemas.netwerkdigitaalerfgoed.nl/registry/serviceLevels/high> ;
+    dcat:accessURL <http://fragments.dbpedia.org/2016-04/en> ;
+    void:uriLookupEndpoint <http://fragments.dbpedia.org/2016-04/en> ;
+    void:feature <https://www.w3.org/ns/formats/data/Turtle> ;
+    dcat:mediaType "text/turtle" ;
+    dataid:distributionOf <http://registry.netwerkdigitaalerfgoed.nl/datasets/3> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/distributions/6> a dcat:Distribution ;
+    dcterms:title "Datadump"@nl ;
+    dcterms:description "Datadump van DBpedia"@nl ;
+    dcterms:issued "2018-02-03"^^xsd:date ;
+    dcterms:modified "2018-03-11"^^xsd:date ;
+    nde:serviceType <http://schemas.netwerkdigitaalerfgoed.nl/registry/serviceTypes/datadump> ;
+    dcat:downloadURL <http://downloads.dbpedia.org/2016-04/dbpedia_2016-10.nt> ;
+    void:dataDump <http://downloads.dbpedia.org/2016-04/dbpedia_2016-10.nt> ;
+    void:feature <https://www.w3.org/ns/formats/data/N-Triples> ;
+    dcat:mediaType "application/n-triples" ;
+    dataid:distributionOf <http://registry.netwerkdigitaalerfgoed.nl/datasets/4> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/distributions/7> a dcat:Distribution ;
+    dcterms:title "SPARQL-endpoint"@nl ;
+    dcterms:description "SPARQL-endpoint van DBpedia"@nl ;
+    dcterms:issued "2018-02-03"^^xsd:date ;
+    dcterms:modified "2018-03-11"^^xsd:date ;
+    nde:serviceType <http://schemas.netwerkdigitaalerfgoed.nl/registry/serviceTypes/sparql> ;
+    nde:serviceLevel <http://schemas.netwerkdigitaalerfgoed.nl/registry/serviceLevels/low> ;
+    dcat:accessURL <https://dbpedia.org/sparql> ;
+    void:sparqlEndpoint <https://dbpedia.org/sparql> ;
+    void:feature <https://www.w3.org/ns/formats/data/Turtle> ;
+    dcat:mediaType "text/turtle" ;
+    dataid:distributionOf <http://registry.netwerkdigitaalerfgoed.nl/datasets/4> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/distributions/8> a dcat:Distribution ;
+    dcterms:title "Datadump"@nl ;
+    dcterms:description "Datadump van RKDartists"@nl ;
+    dcterms:issued "2018-02-03"^^xsd:date ;
+    dcterms:modified "2018-03-11"^^xsd:date ;
+    nde:serviceType <http://schemas.netwerkdigitaalerfgoed.nl/registry/serviceTypes/datadump> ;
+    dcat:downloadURL <https://opendata.rkd.nl/rkdartists.bz2> ;
+    void:dataDump <https://opendata.rkd.nl/rkdartists.bz2> ;
+    void:feature <https://www.w3.org/ns/formats/data/N-Triples> ;
+    dcat:mediaType "application/n-triples+x-bzip2" ;
+    dataid:distributionOf <http://registry.netwerkdigitaalerfgoed.nl/datasets/5> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/distributions/9> a dcat:Distribution ;
+    dcterms:title "SKOS-datadump"@nl ;
+    dcterms:description "SKOS-datadump van RKDartists"@nl ;
+    dcterms:issued "2018-02-03"^^xsd:date ;
+    dcterms:modified "2018-03-11"^^xsd:date ;
+    nde:serviceType <http://schemas.netwerkdigitaalerfgoed.nl/registry/serviceTypes/datadump> ;
+    dcat:downloadURL <https://opendata.rkd.nl/rkdartists-skos.zip> ;
+    void:dataDump <https://opendata.rkd.nl/rkdartists-skos.zip> ;
+    void:feature <https://www.w3.org/ns/formats/data/N-Triples> ;
+    dcat:mediaType "application/n-triples+zip" ;
+    dataid:distributionOf <http://registry.netwerkdigitaalerfgoed.nl/datasets/6> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/distributions/10> a dcat:Distribution ;
+    dcterms:title "OAI-PMH-endpoint"@nl ;
+    dcterms:description "OAI-PMH-endpoint van foto- en filmcollectie van Stadsarchief Breda"@nl ;
+    dcterms:issued "2018-02-03"^^xsd:date ;
+    dcterms:modified "2018-03-11"^^xsd:date ;
+    nde:serviceType <http://schemas.netwerkdigitaalerfgoed.nl/registry/serviceTypes/oai-pmh> ;
+    dcat:accessURL <http://prod.brabantcloud.hubs.delving.org/api/oai-pmh/?verb=ListRecords&set=stadsarchief-breda&metadataPrefix=edm-strict> ;
+    void:uriLookupEndpoint <http://prod.brabantcloud.hubs.delving.org/api/oai-pmh/?verb=ListRecords&set=stadsarchief-breda&metadataPrefix=edm-strict> ;
+    void:feature <https://www.w3.org/ns/formats/data/RDF_XML> ;
+    dcat:mediaType "application/rdf+xml" ;
+    dataid:distributionOf <http://registry.netwerkdigitaalerfgoed.nl/datasets/7> .
+
+<http://registry.netwerkdigitaalerfgoed.nl/distributions/11> a dcat:Distribution ;
+    dcterms:title "Datadump"@nl ;
+    dcterms:description "Datadump van straten van Adamlink"@nl ;
+    dcterms:issued "2018-02-03"^^xsd:date ;
+    dcterms:modified "2018-03-11"^^xsd:date ;
+    nde:serviceType <http://schemas.netwerkdigitaalerfgoed.nl/registry/serviceTypes/datadump> ;
+    dcat:downloadURL <https://adamlink.nl/data/rdf/streets> ;
+    void:dataDump <https://adamlink.nl/data/rdf/streets> ;
+    void:feature <https://www.w3.org/ns/formats/data/Turtle> ;
+    dcat:mediaType "text/turtle" ;
+    dataid:distributionOf <http://registry.netwerkdigitaalerfgoed.nl/datasets/8> .
